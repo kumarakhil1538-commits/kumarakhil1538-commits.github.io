@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> AKHIL | WEB DESIGNER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-text">AKHIL</div>
+    </div>
+    <div id="progressBar"></div>
+    <nav>
+        <img src="logo.png.png" alt="Akhil Logo">
+        <button id="menuBtn">☰</button>
+
+        <UL>
+            <LI><a href="#home">HOME</A></LI>
+            <LI><A href="#about">ABOUT</A></LI>
+            <LI><A href="#skills">SKILLS</A></LI>
+            <LI><A href="#project">PROJECTS</A></LI>
+            <LI><A href="#contact">CONTACT</A></LI>
+        </UL>
+        <button id="themeBtn">☀️</button>
+    </nav>
+    <section id="home">
+        <p>HELLO, I'M</p>
+        <H1>AKHIL</H1>
+        <H2>Web Designer & Wordpress Developer</H2>
+        <p>I creat modern and responsive website for businesses and individuals.</p>
+        <div class="hero-button">
+            <a href="#projects">View My Work</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web designer and wordpress developer who enjoys creating modern and user-friendly website</p>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <p>Wordpress</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>School Website</h3>
+                <a href="#" target="_blank">View Project</a>
+                <p>A responsive website created using Wordpress.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Websites</h3>
+                <a href="#" target="_blank">View Project</a>
+                <p>A personal portfolio website for showcasing creative work. </p>
+            </div>
+            <div class="project-card">
+                <h3>Wordpress Website</h3>
+                <a href="#" target="_blank">View Project</a>
+                <p>A modern website built using Wordpress</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xoevwzna" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="email" name="email" placeholder="Your Email">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Sent Message</button>
+        </form>
+    </section>
+    <button id="topBtn">↑</button>
+    <footer>
+        <p>© <span id="year"></span> Akhil. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
