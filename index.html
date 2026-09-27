@@ -1,89 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="OctMqzcu-ETm3pzEKfD5ad9O1STJgftEEXR8ca9GCUs" />
 
-    <title> AKHIL | WEB DESIGNER</title>
+    <meta name="google-site-verification" content="OctMqzcu-ETm3pzEKFf5ad9O1STJgftEEXR8ca9GCUs" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Akhil Kumar - Personal portfolio website showcasing web development projects and skills.">
+
+    <title>Akhil Kumar | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Loader -->
     <div id="loader">
         <div class="loader-text">AKHIL</div>
     </div>
-    <div id="progressBar"></div>
-    <nav>
-        <img src="logo.png.png" alt="Akhil Logo">
-        <button id="menuBtn">☰</button>
 
-        <UL>
-            <LI><a href="#home">HOME</A></LI>
-            <LI><A href="#about">ABOUT</A></LI>
-            <LI><A href="#skills">SKILLS</A></LI>
-            <LI><A href="#project">PROJECTS</A></LI>
-            <LI><A href="#contact">CONTACT</A></LI>
-        </UL>
-        <button id="themeBtn">☀️</button>
-    </nav>
-    <section id="home">
-        <p>HELLO, I'M</p>
-        <H1>AKHIL</H1>
-        <H2>Web Designer & Wordpress Developer</H2>
-        <p>I creat modern and responsive website for businesses and individuals.</p>
-        <div class="hero-button">
-            <a href="#projects">View My Work</a>
-            <a href="#contact">Contact Me</a>
+    <!-- Scroll Progress -->
+    <div id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+
+            <a href="#home" class="logo-link">
+                <img src="logo.png.png" alt="Akhil Kumar Logo">
+            </a>
+
+            <div class="nav-right">
+
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button id="themeBtn" type="button">☀️</button>
+
+                <button id="menuBtn" type="button">☰</button>
+
+            </div>
+
         </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>Akhil Kumar</h1>
+
+            <h2>
+                <span id="profession">Web Developer</span>
+            </h2>
+
+            <p>
+                I create responsive and modern websites using HTML, CSS,
+                JavaScript and WordPress.
+            </p>
+
+            <div class="home-buttons">
+
+                <a href="#projects">View Projects</a>
+
+                <a href="#contact">Contact Me</a>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+    <!-- About -->
     <section id="about">
+
         <h2>About Me</h2>
-        <p>I am a web designer and wordpress developer who enjoys creating modern and user-friendly website</p>
+
+        <p>
+            Hello! I am Akhil Kumar. I am learning web development and
+            creating websites using HTML, CSS, JavaScript and WordPress.
+        </p>
+
+        <p>
+            I enjoy building clean, responsive and user-friendly websites.
+        </p>
+
     </section>
+
+
+    <!-- Skills -->
     <section id="skills">
+
         <h2>My Skills</h2>
+
         <div class="skills-container">
-            <p>Wordpress</p>
+
+            <p>WordPress</p>
             <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
+
         </div>
+
     </section>
+
+
+    <!-- Projects -->
     <section id="projects">
+
         <h2>My Projects</h2>
+
         <div class="projects-container">
+
             <div class="project-card">
+
                 <h3>School Website</h3>
+
+                <p>
+                    A responsive website created using WordPress.
+                </p>
+
                 <a href="#" target="_blank">View Project</a>
-                <p>A responsive website created using Wordpress.</p>
+
             </div>
+
+
             <div class="project-card">
-                <h3>Portfolio Websites</h3>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website for showcasing creative work.
+                </p>
+
                 <a href="#" target="_blank">View Project</a>
-                <p>A personal portfolio website for showcasing creative work. </p>
+
             </div>
-            <div class="project-card">
-                <h3>Wordpress Website</h3>
-                <a href="#" target="_blank">View Project</a>
-                <p>A modern website built using Wordpress</p>
-            </div>
+
         </div>
+
     </section>
+
+
+    <!-- Contact -->
     <section id="contact">
+
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xoevwzna" method="POST">
-            <input type="text" id="name" name="name" placeholder="Your Name">
-            <input type="text" id="email" name="email" placeholder="Your Email">
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Sent Message</button>
+
+        <form id="contactForm" action="https://formspree.io/f/xoevwzna" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit" id="submitButton">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
         </form>
+
     </section>
-    <button id="topBtn">↑</button>
+
+
+    <!-- Footer -->
     <footer>
-        <p>© <span id="year"></span> Akhil. All Rights Reserved.</p>
+
+        <p>
+            © <span id="year"></span> Akhil. All Rights Reserved.
+        </p>
+
     </footer>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
